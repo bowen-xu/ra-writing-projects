@@ -1,57 +1,88 @@
-# Operating systems and editors
+# Adapted from github/gitignore Node.gitignore and Global/macOS.gitignore (CC0).
+# https://github.com/github/gitignore/blob/main/Node.gitignore
+# https://github.com/github/gitignore/blob/main/Global/macOS.gitignore
+# React / TypeScript / Vite template reference
+# https://github.com/vitejs/vite/blob/main/packages/create-vite/template-react-ts/_gitignore
+
+# OS and editor-local files
 .DS_Store
+._*
 Thumbs.db
 .idea/
 *.swp
+*.swo
 
-# Local configuration and secrets
+# Local environment and signing configuration
 .env
 .env.*
 !.env.example
 .release/
 
-# JavaScript / TypeScript
-node_modules/
-/.pnpm-store/
+# Node dependencies, including local integration symlinks
+node_modules
+.pnpm-store
+.npm/
+
+# JavaScript / TypeScript build output and tool caches
 dist/
+dist-ssr/
 build/
 out/
-coverage/
+.vite/
+.vite-temp/
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
 *.tsbuildinfo
+vite.config.*.timestamp-*
+/*.tgz
 
-# Rust / Tauri
-target/
-apps/desktop/src-tauri/gen/
-apps/desktop/src-tauri/.generated/
-apps/web/src/.generated/
+# Logs and Node diagnostic reports
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.json
 
-# Local databases
+# Coverage and browser-test output
+coverage/
+.nyc_output/
+*.lcov
+/test-results/
+/playwright-report/
+/blob-report/
+playwright/.cache/
+output/playwright/
+.playwright-cli/
+
+# Temporary files and local databases
+.tmp/
+tmp/
+temp/
 *.db
 *.db-shm
 *.db-wal
 *.db-journal
 *.sqlite
 *.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite3-shm
+*.sqlite3-wal
 
-# Logs and temporary files
-*.log
-.cache/
-# Reproducible ECDICT assets generated from a pinned, verified upstream CSV.
-apps/web/public/dictionary/
-.tmp/
-tmp/
-temp/
-output/playwright/
-.playwright-cli/
+# Cargo.lock, pnpm-lock.yaml, manifests and source files remain versioned.
 
-# Local testing and acceptance artifacts
-/docs/testing/
+# Rust template reference (CC0)
+# https://github.com/github/gitignore/blob/main/Rust.gitignore
+target/
+**/*.rs.bk
+*.pdb
+**/mutants.out*/
+rustc-ice-*.txt
 
-# Exact-ref source cache for the Agent Markdown rendering reference.
-/docs/references/projects/remarkjs-react-markdown/
-/docs/references/projects/remarkjs-remark-math/
-/docs/references/projects/syntax-tree-hast-util-to-mdast/
-/docs/references/projects/kingsora-overlayscrollbars/
-/docs/references/projects/jedisct1-rust-minisign-verify/
-
-/node_modules
+# Versioned public dependency artifacts
+/.dependencies/

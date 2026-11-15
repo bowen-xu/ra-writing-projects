@@ -1,6 +1,6 @@
 //! Explicit v2 adapter in the same independently built writing executable.
 mod snapshot;
-use research_agent_core::mcp::FrameDecoder;
+use research_agent_api::mcp::FrameDecoder;
 use research_workbench_native_sdk::{
     writing_project::Input,
     writing_projects_protocol::{self as protocol, RequestBody, Response, ResponseBody},

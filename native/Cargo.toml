@@ -12,9 +12,9 @@ path = "src/main.rs"
 [dependencies]
 biblatex = "=0.12.0"
 regex = "1"
-research-agent-core = { path = "../../../packages/agent-core" }
-research-workbench-native-sdk = { path = "../../../packages/workbench-native-sdk" }
-research-note-query = { path = "../../../packages/note-query" }
+research-agent-api = { path = "../.dependencies/sdk/native/agent-api" }
+research-workbench-native-sdk = { path = "../.dependencies/sdk/native/workbench-native-sdk" }
+research-note-query = { path = "../.dependencies/sdk/native/note-query" }
 sha2 = "0.10"
 serde = "1"
 serde_json = "1"

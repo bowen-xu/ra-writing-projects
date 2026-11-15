@@ -1,5 +1,5 @@
 //! Original writing Agent context policy over request-bound inputs only.
-use research_agent_core::submission::{ContextSourceKind, ContextText};
+use research_agent_api::submission::{ContextSourceKind, ContextText};
 use research_workbench_native_sdk::{
     data::{DataRows, DataValue},
     writing_context::{

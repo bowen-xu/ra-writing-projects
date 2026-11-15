@@ -2,7 +2,7 @@
 use std::io::{self, Read, Write};
 use std::process::ExitCode;
 
-use research_agent_core::mcp::FrameDecoder;
+use research_agent_api::mcp::FrameDecoder;
 use research_workbench_native_sdk::protocol::{
     self, CAPABILITY_ID, ImportPreview, MAX_FRAME_BYTES, PreviewErrorCode, PreviewFailure,
     PreviewOutcome, Request, RequestBody, Response, ResponseBody,

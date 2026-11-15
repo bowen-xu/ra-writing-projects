@@ -1,6 +1,6 @@
 {
   "name": "@research-assistant/writing-projects-plugin",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "exports": {
@@ -31,11 +31,11 @@
     "@codemirror/search": "6.7.1",
     "@codemirror/state": "6.7.1",
     "@codemirror/view": "6.43.7",
-    "@research-assistant/core": "workspace:*",
-    "@research-assistant/data": "workspace:*",
-    "@research-assistant/writing": "workspace:*",
+    "@research-assistant/core": "0.1.0",
+    "@research-assistant/data": "0.1.0",
+    "@research-assistant/writing": "0.1.0",
     "lucide-react": "1.28.0",
-    "@research-assistant/workbench-sdk": "workspace:*"
+    "@research-assistant/workbench-sdk": "0.1.0"
   },
   "peerDependencies": {
     "react": "19.2.8",
@@ -48,10 +48,22 @@
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "6.0.1",
     "vite": "8.2.0",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vitest": "4.1.10",
+    "happy-dom": "20.11.1",
+    "@types/node": "25.0.3"
   },
   "scripts": {
+    "sdk:install": "node scripts/install-sdk.mjs",
+    "build": "node scripts/build-writing-projects-plugin.mjs",
+    "build:frontend": "tsc -p tsconfig.json && vite build",
     "typecheck": "tsc -p tsconfig.json",
-    "build": "vite build"
+    "test": "vitest run",
+    "build:native": "node scripts/build-writing-native-plugin.mjs",
+    "test:native": "cargo test --locked --manifest-path native/Cargo.toml",
+    "build:test-support": "node .dependencies/sdk/tooling/package-native-test-support.mjs",
+    "test:build": "node --test scripts/*.test.mjs",
+    "check": "pnpm typecheck && pnpm test && pnpm test:build && pnpm check:native",
+    "check:native": "cargo fmt --manifest-path native/Cargo.toml --check && cargo clippy --locked --manifest-path native/Cargo.toml --all-targets -- -D warnings && cargo test --locked --manifest-path native/Cargo.toml"
   }
 }

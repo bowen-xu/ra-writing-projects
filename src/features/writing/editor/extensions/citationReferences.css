@@ -1,0 +1,4 @@
+.writing-citation-reference.inline-reference { max-width: min(360px, 100%); vertical-align: baseline; align-items: baseline; }
+.writing-citation-reference .inline-reference-label { display: inline-flex; align-items: baseline; gap: .35em; }
+.writing-citation-author { flex: 0 0 auto; }
+.writing-citation-title { min-width: 0; max-width: 12ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

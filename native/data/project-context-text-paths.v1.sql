@@ -1,0 +1,1 @@
+select relative_path from manuscript_files where manuscript_id=?1 and file_kind in ('tex','bib','style') order by relative_path

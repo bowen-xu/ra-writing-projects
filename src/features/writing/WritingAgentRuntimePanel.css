@@ -1,0 +1,7 @@
+.writing-agent-submission { max-height: 200px; overflow: auto; padding: 10px 16px; border-top: 1px solid var(--border-color, #dce2de); font-size: 13px; }
+.writing-agent-submission p { margin: 6px 0; }
+.writing-agent-submission pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 160px; overflow: auto; }
+.writing-agent-submission button { margin: 6px 8px 0 0; }
+.writing-agent-workspace-consent { min-width: 0; margin: 10px 0; padding: 8px 10px; border: 1px solid var(--border-color, #dce2de); border-radius: 8px; }
+.writing-agent-workspace-consent legend { font-weight: 600; }
+.writing-agent-workspace-consent li { overflow-wrap: anywhere; }

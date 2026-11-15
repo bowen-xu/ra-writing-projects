@@ -1,0 +1,57 @@
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+.release/
+
+# JavaScript / TypeScript
+node_modules/
+/.pnpm-store/
+dist/
+build/
+out/
+coverage/
+*.tsbuildinfo
+
+# Rust / Tauri
+target/
+apps/desktop/src-tauri/gen/
+apps/desktop/src-tauri/.generated/
+apps/web/src/.generated/
+
+# Local databases
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Logs and temporary files
+*.log
+.cache/
+# Reproducible ECDICT assets generated from a pinned, verified upstream CSV.
+apps/web/public/dictionary/
+.tmp/
+tmp/
+temp/
+output/playwright/
+.playwright-cli/
+
+# Local testing and acceptance artifacts
+/docs/testing/
+
+# Exact-ref source cache for the Agent Markdown rendering reference.
+/docs/references/projects/remarkjs-react-markdown/
+/docs/references/projects/remarkjs-remark-math/
+/docs/references/projects/syntax-tree-hast-util-to-mdast/
+/docs/references/projects/kingsora-overlayscrollbars/
+/docs/references/projects/jedisct1-rust-minisign-verify/
+
+/node_modules

@@ -1,0 +1,1 @@
+select relative_path,support_content,content_hash from manuscript_bibliography_files where manuscript_id=?1 order by relative_path

@@ -1,0 +1,57 @@
+{
+  "name": "@research-assistant/writing-projects-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./workspace": "./src/public/workspace.ts",
+    "./manifest": "./src/public/manifest.ts",
+    "./configuration": "./src/public/configuration.ts",
+    "./fileRuntime": "./src/public/fileRuntime.ts",
+    "./conversationSession": "./src/public/conversationSession.ts",
+    "./writingGateway": "./src/public/writingGateway.ts",
+    "./writingCheckpointGateway": "./src/public/writingCheckpointGateway.ts",
+    "./gitVersionGateway": "./src/public/gitVersionGateway.ts",
+    "./gitWorktreeGateway": "./src/public/gitWorktreeGateway.ts",
+    "./contracts/writingGateway": "./src/public/contracts/writingGateway.ts",
+    "./contracts/writingCheckpointGateway": "./src/public/contracts/writingCheckpointGateway.ts",
+    "./contracts/writingNoteAssets": "./src/public/contracts/writingNoteAssets.ts",
+    "./contracts/gitVersionGateway": "./src/public/contracts/gitVersionGateway.ts",
+    "./contracts/gitWorktreeGateway": "./src/public/contracts/gitWorktreeGateway.ts",
+    "./contracts/citationKeyMigration": "./src/public/contracts/citationKeyMigration.ts"
+  },
+  "dependencies": {
+    "@blocknote/react": "0.52.1",
+    "@codemirror/autocomplete": "6.20.3",
+    "@codemirror/commands": "6.10.4",
+    "@codemirror/language": "6.12.4",
+    "@codemirror/lint": "6.9.7",
+    "@codemirror/merge": "6.12.2",
+    "@codemirror/search": "6.7.1",
+    "@codemirror/state": "6.7.1",
+    "@codemirror/view": "6.43.7",
+    "@research-assistant/core": "workspace:*",
+    "@research-assistant/data": "workspace:*",
+    "@research-assistant/writing": "workspace:*",
+    "lucide-react": "1.28.0",
+    "@research-assistant/workbench-sdk": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@blocknote/core": "0.52.1",
+    "@tauri-apps/api": "2.11.1",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.1",
+    "vite": "8.2.0",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "build": "vite build"
+  }
+}

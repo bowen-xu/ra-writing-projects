@@ -1,0 +1,1 @@
+select b.manuscript_id,b.relative_path,{{index}} as term from writing_note_catalog_body_search f join writing_note_catalog_body b on b.rowid=f.rowid where writing_note_catalog_body_search match ?{{parameter}} and instr(b.folded_text,?{{raw}})>0

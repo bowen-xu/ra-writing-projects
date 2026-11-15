@@ -1,0 +1,62 @@
+.writing-file-recovery-stack {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+}
+.writing-file-recovery-stack:not(:has(.writing-file-recovery-actions, .writing-undo-recovery)) { display: none; }
+.writing-file-recovery-stack > summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  color: var(--muted, #68766d);
+  font-size: var(--ui-font-caption);
+  cursor: pointer;
+  list-style: none;
+}
+.writing-file-recovery-stack > summary::-webkit-details-marker { display: none; }
+.writing-file-recovery-stack > summary:hover { color: var(--ink); }
+.writing-file-recovery-stack[open] > summary { background: #e9eeeb; }
+.writing-file-recovery-content {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 50;
+  width: min(520px, calc(100vw - 32px));
+  padding: 12px;
+  border: 1px solid #dce2de;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 6px 22px #24332b22;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: min(30vh, 240px);
+  overflow: auto;
+}
+.writing-undo-recovery {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--muted, #68766d);
+  font-size: var(--ui-font-caption);
+  overflow-wrap: anywhere;
+}
+.writing-undo-recovery-actions,
+.writing-file-recovery-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.writing-file-recovery-actions { font-size: var(--ui-font-caption); }
+.writing-undo-recovery button,
+.writing-file-recovery-actions button {
+  border: 1px solid var(--border-subtle, #d7ddd8);
+  border-radius: 5px;
+  padding: 4px 7px;
+  background: #fff;
+  color: var(--ink, #34473b);
+  font: inherit;
+  cursor: pointer;
+}
+.writing-undo-recovery button:disabled,
+.writing-file-recovery-actions button:disabled { opacity: .55; cursor: default; }

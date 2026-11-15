@@ -1,0 +1,1 @@
+select id,title,source_label,updated_at,status,manuscript_id,relative_path,title_key from writing_note_catalog indexed by writing_note_catalog_title_up where state='ready' and status=?1 and (title_key,id)>(?2,?3) order by title_key asc,id limit ?4

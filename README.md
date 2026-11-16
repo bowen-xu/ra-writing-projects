@@ -11,7 +11,7 @@ pnpm build --offline
 pnpm typecheck
 ```
 
-SDK 来自版本化公开产物，安装在本工程 .dependencies/sdk/。构建复用原有源码闭包、兼容、共享实例、资源和许可证校验。产物及回执位于 .tmp/runtime-plugins/。
+SDK 来自版本化公开产物，安装在本工程 .dependencies/sdk/。构建复用原有源码闭包、兼容、共享实例、资源和许可证校验。可复用插件包及回执位于 artifacts/plugin/，Native 独立包位于 artifacts/native/。
 
 ## 测试
 
@@ -22,7 +22,7 @@ pnpm test:build
 pnpm build:test-support
 ```
 
-UI 测试消费 Workbench 已构建的 /sdk/v1/，沿用生产包相同的 external 路径映射。纯领域测试使用本工程夹具。涉及 Core 私有夹具或多个工程的回归由主仓库 integration/ 执行。
+UI 测试消费 Workbench 已构建的 /sdk/v1/，沿用生产包相同的 external 路径映射。纯领域测试使用本工程夹具。涉及 Core 私有夹具或多个工程的回归由主仓库 tests/acceptance/ 执行。
 
 Native 依赖 SDK 的有限协议与 agent-api。测试支持源码产物用于 Core 的现有回归，由本工程单独打包并记录版本与完整性。
 
@@ -31,3 +31,7 @@ Native 依赖 SDK 的有限协议与 agent-api。测试支持源码产物用于 
 preview/ 持有完整 App、Agent Canvas、写作 Diff 及交付／恢复演示，使用公开的 @research-assistant/workbench-preview 开发包。
 父仓 pnpm prepare:previews 准备公开依赖后，可在本项目运行 pnpm dev:preview、pnpm build:preview 和 pnpm typecheck:preview。
 公开开发模块由 preview/public-modules.json 列出，产物保存在 artifacts/preview/。
+
+## 构建缓存与产物
+
+标准构建入口复用通过完整性校验的既有包。产物在本工程 `artifacts/<kind>/<内容哈希>/package/`，当前入口在 `artifacts/<kind>/latest.json`。回执随产物保存，`.cache/build` 保存索引，`.cache/logs` 保存日志，`.cache/work` 为完成后清理的隔离工作目录。清理编译缓存后仍可复用已保存的当前包。

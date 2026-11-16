@@ -1,0 +1,34 @@
+{
+  "formatVersion": 1,
+  "purpose": "Public protocol JSON test inputs for plugin-owned collaboration tests",
+  "fixtures": [
+    {
+      "file": "document-checkpoint-v1.json",
+      "source": "packages/writing/fixtures/document-checkpoint-v1.json",
+      "repository": "ra-workbench-sdk",
+      "revision": "5c6a31fb06eab913436251f2171ff84fb787fd02",
+      "sha256": "b70b9986278ad86c7719d9cd511e11f5ab43e87fbdef0455af73c0426bc30b50"
+    },
+    {
+      "file": "document-checkpoint-editor-receipt-v1.json",
+      "source": "packages/writing/fixtures/document-checkpoint-editor-receipt-v1.json",
+      "repository": "ra-workbench-sdk",
+      "revision": "5c6a31fb06eab913436251f2171ff84fb787fd02",
+      "sha256": "230de6dbac7704110710e6fd309ee3ac6ec90ff1a0fac05ee3bbe9614cac9cb4"
+    },
+    {
+      "file": "agent-events-v1.json",
+      "source": "tests/fixtures/agent-events-v1.json",
+      "repository": "ra-workbench",
+      "revision": "8aa2bee1afd3bd166b7fd082f2b850221fcf7b31",
+      "sha256": "7322af4017e8fbc9ed3e67e97b4724d7e5e2cb8cd4e746c59982693c6f486160"
+    },
+    {
+      "file": "agent-compaction-completed-v1.json",
+      "source": "tests/fixtures/agent-compaction-completed-v1.json",
+      "repository": "ra-workbench",
+      "revision": "8aa2bee1afd3bd166b7fd082f2b850221fcf7b31",
+      "sha256": "a15e7c6e4a2d7b15b16a4aec318c41b54e95d52b83cb91be404d60d4b2e6a21c"
+    }
+  ]
+}

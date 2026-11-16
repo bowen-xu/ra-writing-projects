@@ -1,0 +1,324 @@
+[
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 1,
+    "timestampMs": 1792981342536,
+    "requestId": "e76befd6-155e-4795-b9cc-0717f8462dca",
+    "payload": {
+      "type": "turnStarted",
+      "turnId": "d09c1e8c-4716-4664-bef3-c13c0dfa207d",
+      "contextSnapshotId": "f73ccfba-dce9-4d8d-a1ea-c21cacd06d90",
+      "model": {
+        "providerId": "openai",
+        "modelId": "gpt-5.6-terra",
+        "revision": "synthetic-wire-v1"
+      }
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 2,
+    "timestampMs": 1792981342536,
+    "requestId": "e76befd6-155e-4795-b9cc-0717f8462dca",
+    "payload": {
+      "type": "itemStarted",
+      "turnId": "d09c1e8c-4716-4664-bef3-c13c0dfa207d",
+      "itemId": "fc9a3e49-3697-478a-b1c1-636eb23bc9da",
+      "kind": {
+        "type": "userMessage"
+      }
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 3,
+    "timestampMs": 1792981342536,
+    "requestId": "e76befd6-155e-4795-b9cc-0717f8462dca",
+    "payload": {
+      "type": "textDelta",
+      "turnId": "d09c1e8c-4716-4664-bef3-c13c0dfa207d",
+      "itemId": "fc9a3e49-3697-478a-b1c1-636eb23bc9da",
+      "text": "Keep source decisions"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 4,
+    "timestampMs": 1792981342536,
+    "requestId": "e76befd6-155e-4795-b9cc-0717f8462dca",
+    "payload": {
+      "type": "itemCompleted",
+      "turnId": "d09c1e8c-4716-4664-bef3-c13c0dfa207d",
+      "itemId": "fc9a3e49-3697-478a-b1c1-636eb23bc9da"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 5,
+    "timestampMs": 1792981342550,
+    "requestId": "e76befd6-155e-4795-b9cc-0717f8462dca",
+    "payload": {
+      "type": "phaseChanged",
+      "turnId": "d09c1e8c-4716-4664-bef3-c13c0dfa207d",
+      "phase": "runningModel"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 6,
+    "timestampMs": 1792981342551,
+    "requestId": "e76befd6-155e-4795-b9cc-0717f8462dca",
+    "payload": {
+      "type": "modelRequestStarted",
+      "turnId": "d09c1e8c-4716-4664-bef3-c13c0dfa207d",
+      "attemptId": "01e008a3-cfbd-4776-963a-54bde7d85cc2",
+      "model": {
+        "providerId": "openai",
+        "modelId": "gpt-5.6-terra",
+        "revision": "synthetic-wire-v1"
+      }
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 7,
+    "timestampMs": 1792981342607,
+    "requestId": "e76befd6-155e-4795-b9cc-0717f8462dca",
+    "payload": {
+      "type": "modelResponseStarted",
+      "turnId": "d09c1e8c-4716-4664-bef3-c13c0dfa207d",
+      "attemptId": "01e008a3-cfbd-4776-963a-54bde7d85cc2",
+      "responseId": "response-fd71a926-120f-4a81-9726-77a4b289ed4a",
+      "model": null
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 8,
+    "timestampMs": 1792981342676,
+    "requestId": "e76befd6-155e-4795-b9cc-0717f8462dca",
+    "payload": {
+      "type": "itemStarted",
+      "turnId": "d09c1e8c-4716-4664-bef3-c13c0dfa207d",
+      "itemId": "b73047b0-e369-4b5b-bf7b-3384fde2d4c6",
+      "kind": {
+        "type": "assistantMessage"
+      }
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 9,
+    "timestampMs": 1792981342677,
+    "requestId": "e76befd6-155e-4795-b9cc-0717f8462dca",
+    "payload": {
+      "type": "itemPhaseChanged",
+      "turnId": "d09c1e8c-4716-4664-bef3-c13c0dfa207d",
+      "itemId": "b73047b0-e369-4b5b-bf7b-3384fde2d4c6",
+      "phase": "finalAnswer",
+      "native": true
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 10,
+    "timestampMs": 1792981342731,
+    "requestId": "e76befd6-155e-4795-b9cc-0717f8462dca",
+    "payload": {
+      "type": "textDelta",
+      "turnId": "d09c1e8c-4716-4664-bef3-c13c0dfa207d",
+      "itemId": "b73047b0-e369-4b5b-bf7b-3384fde2d4c6",
+      "text": "这是由真实 Rust Agent 运行器处理的隔离预览回复。"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 11,
+    "timestampMs": 1792981342845,
+    "requestId": "e76befd6-155e-4795-b9cc-0717f8462dca",
+    "payload": {
+      "type": "itemAccepted",
+      "turnId": "d09c1e8c-4716-4664-bef3-c13c0dfa207d",
+      "itemId": "b73047b0-e369-4b5b-bf7b-3384fde2d4c6",
+      "kind": {
+        "type": "assistantMessage"
+      },
+      "text": "这是由真实 Rust Agent 运行器处理的隔离预览回复。",
+      "phase": "finalAnswer",
+      "source": {
+        "attemptId": "01e008a3-cfbd-4776-963a-54bde7d85cc2",
+        "ordinal": 0,
+        "providerItemId": "fd71a926-120f-4a81-9726-77a4b289ed4a",
+        "providerDataJson": "{\"schema_version\":1,\"api\":\"responses\",\"model\":{\"providerId\":\"openai\",\"modelId\":\"gpt-5.6-terra\",\"revision\":\"synthetic-wire-v1\"},\"account_scope\":\"00000000-0000-0000-0000-0000000a11ce\",\"response_id\":\"response-fd71a926-120f-4a81-9726-77a4b289ed4a\",\"item_id\":\"fd71a926-120f-4a81-9726-77a4b289ed4a\",\"item_type\":\"message\",\"data\":{\"item\":{\"content\":[{\"type\":\"output_text\"}],\"id\":\"fd71a926-120f-4a81-9726-77a4b289ed4a\",\"phase\":\"final_answer\",\"role\":\"assistant\",\"type\":\"message\"},\"text_bindings\":[{\"content_index\":0,\"field\":\"text\",\"len_byte\":66,\"start_byte\":0}]}}"
+      }
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 12,
+    "timestampMs": 1792981342870,
+    "requestId": "e76befd6-155e-4795-b9cc-0717f8462dca",
+    "payload": {
+      "type": "modelRequestFinished",
+      "turnId": "d09c1e8c-4716-4664-bef3-c13c0dfa207d",
+      "attemptId": "01e008a3-cfbd-4776-963a-54bde7d85cc2",
+      "inputTokens": null,
+      "outputTokens": null
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 13,
+    "timestampMs": 1792981342871,
+    "requestId": "e76befd6-155e-4795-b9cc-0717f8462dca",
+    "payload": {
+      "type": "usage",
+      "turnId": "d09c1e8c-4716-4664-bef3-c13c0dfa207d",
+      "inputTokens": null,
+      "outputTokens": null
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 14,
+    "timestampMs": 1792981342892,
+    "requestId": "e76befd6-155e-4795-b9cc-0717f8462dca",
+    "payload": {
+      "type": "turnFinished",
+      "turnId": "d09c1e8c-4716-4664-bef3-c13c0dfa207d",
+      "outcome": "completed"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 15,
+    "timestampMs": 1792981343108,
+    "requestId": "ef3d7b50-cf73-4a2e-8bdd-311b2cece063",
+    "payload": {
+      "type": "turnStarted",
+      "turnId": "b30f3098-4d84-421a-873d-d083b5f5d3f6",
+      "contextSnapshotId": "a7119b3b-12b8-44e0-814f-02b4941aef61",
+      "model": {
+        "providerId": "openai",
+        "modelId": "gpt-5.6-terra",
+        "revision": "synthetic-wire-v1"
+      },
+      "taskKind": "compact"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 16,
+    "timestampMs": 1792981343115,
+    "requestId": "ef3d7b50-cf73-4a2e-8bdd-311b2cece063",
+    "payload": {
+      "type": "itemStarted",
+      "turnId": "b30f3098-4d84-421a-873d-d083b5f5d3f6",
+      "itemId": "01a17604-1b8b-7613-a82e-1800ada8c19b",
+      "kind": {
+        "type": "contextCompaction"
+      }
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 17,
+    "timestampMs": 1792981343116,
+    "requestId": "ef3d7b50-cf73-4a2e-8bdd-311b2cece063",
+    "payload": {
+      "type": "phaseChanged",
+      "turnId": "b30f3098-4d84-421a-873d-d083b5f5d3f6",
+      "phase": "runningModel"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 18,
+    "timestampMs": 1792981343120,
+    "requestId": "ef3d7b50-cf73-4a2e-8bdd-311b2cece063",
+    "payload": {
+      "type": "modelRequestStarted",
+      "turnId": "b30f3098-4d84-421a-873d-d083b5f5d3f6",
+      "attemptId": "d9a2513b-2ec3-4715-aa9c-9487fda4e02b",
+      "model": {
+        "providerId": "openai",
+        "modelId": "gpt-5.6-terra",
+        "revision": "synthetic-wire-v1"
+      }
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 19,
+    "timestampMs": 1792981343133,
+    "requestId": "ef3d7b50-cf73-4a2e-8bdd-311b2cece063",
+    "payload": {
+      "type": "modelResponseStarted",
+      "turnId": "b30f3098-4d84-421a-873d-d083b5f5d3f6",
+      "attemptId": "d9a2513b-2ec3-4715-aa9c-9487fda4e02b",
+      "responseId": "compact-response",
+      "model": {
+        "providerId": "openai",
+        "modelId": "gpt-5.6-terra",
+        "revision": "synthetic-wire-v1"
+      }
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 20,
+    "timestampMs": 1792981343134,
+    "requestId": "ef3d7b50-cf73-4a2e-8bdd-311b2cece063",
+    "payload": {
+      "type": "modelRequestFinished",
+      "turnId": "b30f3098-4d84-421a-873d-d083b5f5d3f6",
+      "attemptId": "d9a2513b-2ec3-4715-aa9c-9487fda4e02b",
+      "inputTokens": 80,
+      "outputTokens": 4
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 21,
+    "timestampMs": 1792981343142,
+    "requestId": "ef3d7b50-cf73-4a2e-8bdd-311b2cece063",
+    "payload": {
+      "type": "itemCompleted",
+      "turnId": "b30f3098-4d84-421a-873d-d083b5f5d3f6",
+      "itemId": "01a17604-1b8b-7613-a82e-1800ada8c19b"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "conversationId": "c38e46df-b32f-4c87-b2e1-eb2209499836",
+    "seq": 22,
+    "timestampMs": 1792981343144,
+    "requestId": "ef3d7b50-cf73-4a2e-8bdd-311b2cece063",
+    "payload": {
+      "type": "turnFinished",
+      "turnId": "b30f3098-4d84-421a-873d-d083b5f5d3f6",
+      "outcome": "completed"
+    }
+  }
+]

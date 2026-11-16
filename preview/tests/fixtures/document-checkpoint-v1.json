@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "manuscriptId": "00000000-0000-4000-8000-000000000001",
+  "relativePath": "sections/main.tex",
+  "version": 3,
+  "content": "保留的正文 😀\r\nnew two\r\n",
+  "reviewBaseline": "保留的正文 😀\r\nold two\r\n",
+  "savedSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "savedVersion": 1,
+  "operations": [{
+    "operationId": "operation-a",
+    "conversationId": "conversation-a",
+    "requestId": "request-a",
+    "resultSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  }],
+  "saveIntent": {
+    "operationId": "save-a",
+    "version": 2,
+    "expectedSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "targetSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  }
+}

@@ -25,3 +25,7 @@ pnpm build:test-support
 UI 测试消费 Workbench 已构建的 /sdk/v1/，沿用生产包相同的 external 路径映射。纯领域测试使用本工程夹具。涉及 Core 私有夹具或多个工程的回归由主仓库 integration/ 执行。
 
 Native 依赖 SDK 的有限协议与 agent-api。测试支持源码产物用于 Core 的现有回归，由本工程单独打包并记录版本与完整性。
+
+## 构建缓存与产物
+
+标准构建入口复用通过完整性校验的既有包。产物在本工程 `artifacts/<kind>/<内容哈希>/package/`，当前入口在 `artifacts/<kind>/latest.json`。回执随产物保存，`.cache/build` 保存索引，`.cache/logs` 保存日志，`.cache/work` 为完成后清理的隔离工作目录。清理编译缓存后仍可复用已保存的当前包。

@@ -86,3 +86,6 @@ rustc-ice-*.txt
 
 # Versioned public dependency artifacts
 /.dependencies/
+
+# Reusable independent project build artifacts
+/artifacts/

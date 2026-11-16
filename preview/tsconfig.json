@@ -1,0 +1,9 @@
+{
+  "extends": "../tsconfig.json",
+  "files": [
+    "agent/WritingDemoMetadataState.ts",
+    "agent/WritingDemoTimedGate.ts",
+    "agent/WritingDemoSubmissionStates.ts",
+    "agent/WritingDemoTimedWaits.test.ts"
+  ]
+}

@@ -25,3 +25,9 @@ pnpm build:test-support
 UI 测试消费 Workbench 已构建的 /sdk/v1/，沿用生产包相同的 external 路径映射。纯领域测试使用本工程夹具。涉及 Core 私有夹具或多个工程的回归由主仓库 integration/ 执行。
 
 Native 依赖 SDK 的有限协议与 agent-api。测试支持源码产物用于 Core 的现有回归，由本工程单独打包并记录版本与完整性。
+
+## 独立预览
+
+preview/ 持有完整 App、Agent Canvas、写作 Diff 及交付／恢复演示，使用公开的 @research-assistant/workbench-preview 开发包。
+父仓 pnpm prepare:previews 准备公开依赖后，可在本项目运行 pnpm dev:preview、pnpm build:preview 和 pnpm typecheck:preview。
+公开开发模块由 preview/public-modules.json 列出，产物保存在 artifacts/preview/。

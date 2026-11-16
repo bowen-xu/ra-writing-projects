@@ -1,3 +1,4 @@
+import "../src/app/runtime/appPreviewDatabase";
 import {createRoot} from "react-dom/client";
 import {NotesProvider} from "@research-assistant/workbench-preview/notes-client";
 import {ApplicationKeyboardPolicy} from "@research-assistant/workbench-preview/application-keyboard-policy";

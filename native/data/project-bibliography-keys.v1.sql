@@ -1,1 +1,0 @@
-select citation_key from manuscript_bibliography_entries where manuscript_id=?1

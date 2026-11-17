@@ -1,1 +1,0 @@
-select id,citation_key,bibtex_entry from manuscript_bibliography_entries where manuscript_id=?1

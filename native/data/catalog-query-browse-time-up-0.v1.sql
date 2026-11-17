@@ -1,1 +1,0 @@
-select id,title,source_label,updated_at,status,manuscript_id,relative_path,updated_ms from writing_note_catalog indexed by writing_note_catalog_time_up where state='ready' and status=?1 order by updated_ms asc,id limit ?4

@@ -1,1 +1,0 @@
-select c.manuscript_id,c.relative_path,{{index}} as term from writing_note_catalog_metadata_search f join writing_note_catalog c on c.rowid=f.rowid where writing_note_catalog_metadata_search match ?{{parameter}} and instr(c.metadata_text,?{{raw}})>0

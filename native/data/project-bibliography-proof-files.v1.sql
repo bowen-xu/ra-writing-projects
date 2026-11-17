@@ -1,1 +1,0 @@
-select relative_path,original_content,support_content from manuscript_bibliography_files where manuscript_id=?1 order by relative_path

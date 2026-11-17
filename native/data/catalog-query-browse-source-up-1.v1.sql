@@ -1,1 +1,0 @@
-select id,title,source_label,updated_at,status,manuscript_id,relative_path,source_key from writing_note_catalog indexed by writing_note_catalog_source_up where state='ready' and status=?1 and (source_key,id)>(?2,?3) order by source_key asc,id limit ?4

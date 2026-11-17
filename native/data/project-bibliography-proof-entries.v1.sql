@@ -1,1 +1,0 @@
-select id,citation_key,original_key,original_bibtex,imported_draft_json,bibtex_entry,literature_item_id,library_snapshot_json from manuscript_bibliography_entries where manuscript_id=?1 order by id

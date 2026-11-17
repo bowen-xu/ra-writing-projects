@@ -1,1 +1,0 @@
-select id,title,source_label,updated_at,status,manuscript_id,relative_path,id from writing_note_catalog indexed by writing_note_catalog_category where state='ready' and status=?1 and id>?3 order by id limit ?4

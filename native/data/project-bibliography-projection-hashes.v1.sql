@@ -1,1 +1,0 @@
-select relative_path,content_hash from manuscript_bibliography_files where manuscript_id=?1

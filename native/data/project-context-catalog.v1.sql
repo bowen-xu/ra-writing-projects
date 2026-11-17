@@ -1,1 +1,0 @@
-select id,title from manuscripts m where status='active' and (instr(lower(title),lower(?1))>0 or exists(select 1 from manuscript_files f where f.manuscript_id=m.id and instr(lower(f.relative_path),lower(?1))>0)) order by updated_at desc,id limit 60

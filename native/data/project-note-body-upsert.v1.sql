@@ -1,1 +1,0 @@
-insert into writing_note_catalog_body(manuscript_id,relative_path,search_text,folded_text)values(?1,?2,?3,?4) on conflict(manuscript_id,relative_path) do update set search_text=excluded.search_text,folded_text=excluded.folded_text where search_text is not excluded.search_text or folded_text is not excluded.folded_text
